@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-string-manipulatie</title>
+    <script type="text/javascript">
+        var voorNaam = "Tom";
+        var achterNaam = "Gielis";
+        var volledigeNaam = voorNaam + " " + achterNaam;
+        document.write("Hallo " + volledigeNaam);
+        document.write(
+            "<br>Jouw naam bevat " + volledigeNaam.length + " karakers."
+        );
+        var fileName = "javaScriptFrameWork";
+        document.write("<br>De originele filename is: '" + fileName + "'.");
+        fileName = fileName.toLowerCase();
+        document.write(
+            "<br>De filename kan beter in kleine letters getypt worden, dus: " +
+            fileName +
+            "."
+        );
+        var txtDeel1 = fileName.substring(0, 10);
+        var txtDeel2 = fileName.substring(10, 19);
+
+        document.write(
+            "<br> Als je " +
+            fileName +
+            " opsplitst, krijg je: '" +
+            txtDeel1 +
+            "' en '" +
+            txtDeel2 +
+            "'."
+        );
+        var letter = fileName.charAt(5);
+        document.write(
+            "<br> Het zesde karakter (volgens mensen) in '" +
+            fileName +
+            "' is '" +
+            letter +
+            "'."
+        );
+    </script>
+</head>
+
+<body> </body>
+
+</html>
+
+<!--Opdracht 4: string manipulatie Maak een nieuwe html document: 04-string-manipulatie.html Maak een var aan voor een voornaam en een tweede voor een achternaam. Vul deze in. Voeg deze 2 vars samen in een derde var, met een spatie tussen de namen. Druk
+dan de derde var af op het scherm als volgt: De tekst "Hallo" en daarachter de samengestelde naam. Resultaat: Hallo Danny Drijvers. Maak een nieuwe var aan om de lengte van jouw naam te berekenen. Resultaat: Jouw naam bevat 13 karakters. Maak een var
+aan genaamd filename. Hierin steek je de tekst: javaScriptFrameWork. Druk deze af op het scherm. Resultaat (let op de quotes): De originele filename is: 'javaScriptFrameWork' Zet de letters van de var om in kleine letters. Let op, dit is niet enkel tonen,
+maar echt omzetten. Resultaat (let op de quotes): De filename kan beter in kleine letters getypt worden, dus: 'javascriptframework'. Maak 2 nieuwe variabelen aan waarin je via de substring() methode de filename opsplitst. Resultaat (let op de quotes):
+Als je 'javascriptframework' opsplitst, krijg je : 'javascript' en 'framework'. Maak een nieuwe var en steek het 5e karakter van de filename var erin. Resultaat (let op de quotes): Het zesde karakter (volgens mensen) in 'javascriptframework' is: 'c'.
+Het uiteindelijke resultaat op het scherm zal dus zijn: Hallo Danny Drijvers. Jouw naam bevat 13 karakters. De originele filename is: 'javaScriptFrameWork' De filename kan beter in kleine letters getypt worden, dus: 'javascriptframework' Als je 'javascriptframework'
+opsplitst, krijg je : 'javascript' en 'framework'. Het zesde karakter (volgens mensen) in 'javascriptframework' is: 'c'.-->
