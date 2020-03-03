@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-dagVanDeWeek</title>
+    <script type="text/javascript">
+        var d = new Date();
+        var weekdag = new Array();
+        weekdag[0] = "zondag";
+        weekdag[1] = "maandag";
+        weekdag[2] = "dinsdag";
+        weekdag[3] = "woensdag";
+        weekdag[4] = "donderdag";
+        weekdag[5] = "vrijdag";
+        weekdag[6] = "zaterdag";
+
+        var vandaag = weekdag[d.getDay()];
+        document.write("<p>Vandaag is " + vandaag + ".</p>");
+        if (
+            vandaag == "maandag" ||
+            vandaag == "dinsdag" ||
+            vandaag == "woensdag" ||
+            vandaag == "donderdag" ||
+            vandaag == "vrijdag"
+        ) {
+            document.write("<p>Het is een werkdag, aan de slag dus.</p>");
+        }
+    </script>
+</head>
+
+<body> </body>
+
+</html>
